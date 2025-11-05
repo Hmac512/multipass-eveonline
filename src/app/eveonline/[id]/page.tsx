@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useRef, use } from "react";
 
-interface RipplingTemplateData {
+interface EveonlineTemplateData {
   templateId: string;
   title?: string;
   id: string;
@@ -20,9 +20,8 @@ export default function IdPage({ params }: PageProps) {
   const unwrappedParams = use(params);
   const { id } = unwrappedParams;
   const router = useRouter();
-  const [templateData, setTemplateData] = useState<RipplingTemplateData | null>(
-    null
-  );
+  const [templateData, setTemplateData] =
+    useState<EveonlineTemplateData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
@@ -83,12 +82,12 @@ export default function IdPage({ params }: PageProps) {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FFC300] p-2 md:p-8 text-gray-100 pt-32 overflow-hidden">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 via-black to-blue-950 p-2 md:p-8 text-gray-100 pt-32 overflow-hidden">
       <main className="w-full max-w-4xl flex flex-col items-center space-y-8">
         <div className="flex flex-row items-center justify-center gap-6">
           <img
-            src="/levels-logo.png"
-            alt="Levels.fyi Logo"
+            src="/eve-logo.png"
+            alt="EVE Online Logo"
             width={120}
             height={52}
             className="rounded-2xl"
@@ -99,20 +98,20 @@ export default function IdPage({ params }: PageProps) {
           <div className="w-full bg-gray-950/60 border border-gray-700 shadow-lg backdrop-blur rounded-3xl p-8 text-center space-y-6">
             <h1 className="text-3xl font-bold">
               {hasUserConnected
-                ? "Rippling Employment Verified!"
-                : "Connecting to Rippling"}
+                ? "EVE Online Profile Verified!"
+                : "Connecting to EVE Online"}
             </h1>
 
             <p className="text-gray-300">
               {hasUserConnected
-                ? "Your employment has been verified! Here's the raw data:"
-                : "Connect your Rippling account to securely verify your employment with Levels.fyi."}
+                ? "Your pilot profile has been verified! Here's the raw data:"
+                : "Connect your EVE Online account to securely verify your character."}
             </p>
 
             <div className="relative">
               <button
                 onClick={copyToClipboard}
-                className="absolute top-2 right-2 px-3 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold transition"
+                className="absolute top-2 right-2 px-3 py-1 rounded-lg bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold transition"
               >
                 {copied ? "Copied!" : "Copy JSON"}
               </button>
@@ -127,9 +126,9 @@ export default function IdPage({ params }: PageProps) {
                   href={templateData.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full whitespace-nowrap rounded-full bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-6 py-4 font-semibold shadow-lg hover:from-emerald-700 hover:to-emerald-800 transition-all duration-200"
+                  className="w-full whitespace-nowrap rounded-full bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-6 py-4 font-semibold shadow-lg hover:from-cyan-700 hover:to-blue-700 transition-all duration-200"
                 >
-                  Connect Rippling Account
+                  Connect EVE Online Account
                 </a>
               )}
               <button
