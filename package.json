@@ -1,0 +1,39 @@
+{
+  "name": "multipass-eveonline-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run next dev",
+    "build": "bun next build",
+    "start": "bun next start",
+    "lint": "bun next lint"
+  },
+  "dependencies": {
+    "@farcaster/miniapp-sdk": "^0.1.9",
+    "@heroicons/react": "^2.2.0",
+    "@types/validator": "^13.15.2",
+    "@vercel/blob": "^1.1.1",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "ethers": "^6.13.4",
+    "framer-motion": "^12.23.12",
+    "html2canvas-pro": "^1.5.11",
+    "lucide-react": "^0.541.0",
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "share-twitter": "^1.0.0",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@tailwindcss/postcss": "^4",
+    "tailwindcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "@eslint/eslintrc": "^3"
+  },
+  "packageManager": "bun@latest"
+}
