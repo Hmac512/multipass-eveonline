@@ -17,22 +17,13 @@ export const metadata: Metadata = {
   title: "Verify Your EVE Online Profile - Opacity Multipass",
   description:
     "Securely verify your EVE Online character and corporation history using Opacity's multipass technology. Share proof of your pilot credentials while keeping your personal data private.",
-  icons: "eve-logo.png",
   openGraph: {
     title: "Verify Your EVE Online Profile - Opacity Multipass",
     description:
       "Connect your EVE Online account to securely verify your character history and achievements. Powered by Opacity to verify your pilot profile without exposing sensitive personal information.",
     siteName: "Opacity Multipass - EVE Online Profile Verification",
     url: "https://multipass-eveonline.vercel.app",
-    images: [
-      {
-        url: "/preview.png",
-        width: 1602,
-        height: 944,
-        alt: "Verify Your EVE Online Profile via Opacity Multipass",
-        type: "image/png",
-      },
-    ],
+    images: [],
   },
   appLinks: {
     ios: {

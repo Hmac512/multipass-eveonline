@@ -41,13 +41,13 @@ export default function Home() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <img
+          {/* <img
             src="/eve-logo.png"
             alt="EVE Online Logo"
             width={120}
             height={52}
             className="rounded-2xl"
-          />
+          /> */}
         </motion.div>
 
         {/* Header */}

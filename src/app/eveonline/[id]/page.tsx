@@ -85,13 +85,13 @@ export default function IdPage({ params }: PageProps) {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-slate-900 via-black to-blue-950 p-2 md:p-8 text-gray-100 pt-32 overflow-hidden">
       <main className="w-full max-w-4xl flex flex-col items-center space-y-8">
         <div className="flex flex-row items-center justify-center gap-6">
-          <img
+          {/* <img
             src="/eve-logo.png"
             alt="EVE Online Logo"
             width={120}
             height={52}
             className="rounded-2xl"
-          />
+          /> */}
         </div>
 
         {templateData && (
